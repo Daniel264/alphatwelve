@@ -27,17 +27,23 @@ const Events = ({ isCompleted }: Status) => {
             ))}
             <dialog
                 id="my_modal_5"
-                className="modal modal-bottom sm:modal-middle text-white"
+                className="modal modal-bottom sm:modal-middle"
             >
-                <div className="modal-box">
-                    <h3 className="font-bold text-lg">Hello!</h3>
+                <div className="modal-box bg-white">
+                    <h3 className="font-bold text-lg">Event Name</h3>
+                    <h5>Event Date</h5>
+                    <p>Event Description</p>
                     <p className="py-4">
-                        Press ESC key or click the button below to close
+                        3 Guest Speakers: Speaker name A, Speaker name B,
+                        Speaker name C.
                     </p>
+                    <p>400 Attendees</p>
                     <div className="modal-action">
-                        <form method="dialog">
+                        <form method="dialog" className="space-x-2">
                             {/* if there is a button in form, it will close the modal */}
-                            <button className="btn">Close</button>
+                            <button className="btn bg-[#F43F5E] outline-none border-none text-white">Close</button>
+                            <button className="btn bg-[#8576FF] outline-none border-none text-white">Mark as completed</button>
+
                         </form>
                     </div>
                 </div>
