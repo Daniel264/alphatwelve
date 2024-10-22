@@ -29,9 +29,9 @@ const SummaryComponent = ({
                             <img src={Decline} />
                         )}
                         <span
-                            className={`${percentagePositive ? `text-green-500` : `text-red-500`} font-medium flex`}
+                            className={`${percentagePositive ? `text-green-500` : `text-red-500`} font-medium flex text-sm`}
                         >
-                            <span>{percentagePositive ? "+" : "-"}</span> 5.0%
+                            <span className="text-sm">{percentagePositive ? "+" : "-"}</span> 5.0%
                         </span>
                     </span>
                 </div>
