@@ -5,7 +5,7 @@ import "./globals.css";
 
 function App() {
     return (
-        <div className="flex h-[100vh] ">
+        <div className="flex h-[100vh]">
             <div>
                 <Menu />
             </div>
