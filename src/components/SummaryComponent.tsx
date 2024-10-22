@@ -8,16 +8,20 @@ interface SummaryProps {
     percentagePositive: boolean;
 }
 
-const SummaryComponent = ({ title, price, percentagePositive }: SummaryProps) => {
+const SummaryComponent = ({
+    title,
+    price,
+    percentagePositive,
+}: SummaryProps) => {
     return (
         <div className="w-full">
             <article className="border-2 border-[#ADA9BB]/15 px-4 h-[88px] w-full space-y-3">
                 <div className="flex space-x-5">
-                    <p>{title}</p>
+                    <p className="text-[#64748B] font-semibold">{title}</p>
                     <img src={Information} alt="" />
                 </div>
                 <div className="flex flex-row space-x-5">
-                    <p>{price}</p>
+                    <p className="font-medium text-xl">{price}</p>
                     <p>
                         {percentagePositive ? (
                             <img src={Incline} />
