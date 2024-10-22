@@ -1,3 +1,4 @@
+import Events from "./components/Events";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
 import Summary from "./components/Summary";
@@ -12,6 +13,7 @@ function App() {
             <div className="w-full h-[100vh] p-4 md:p-8 flex-col justify-center items-center flex">
                 <Summary />
                 <Hero />
+                <Events />
             </div>
         </div>
     );
