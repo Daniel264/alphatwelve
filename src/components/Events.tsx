@@ -15,7 +15,7 @@ const Events = ({isCompleted}: Status) => {
                     <span>{item.name}</span>
                     <span>{item.date}</span>
                     <span>{item.speaker}</span>
-                    <span className={`${isCompleted ? 'bg-green-300': 'bg-red-200'} rounded-badge px-3`}>{item.Status}</span>
+                    <span className={`${isCompleted ? 'bg-green-200': 'bg-red-200'} rounded-badge px-3`}>{item.Status}</span>
                 </div>
             ))}
         </div>
