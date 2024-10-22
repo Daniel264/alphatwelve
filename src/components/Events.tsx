@@ -1,6 +1,10 @@
 import { EventDetails } from "../utils/EventDetails";
 
-const Events = () => {
+interface Status {
+    isCompleted: boolean;
+}
+
+const Events = ({isCompleted}: Status) => {
     return (
         <div className="w-full space-y-10">
             {EventDetails.map((item, index) => (
@@ -11,7 +15,7 @@ const Events = () => {
                     <span>{item.name}</span>
                     <span>{item.date}</span>
                     <span>{item.speaker}</span>
-                    <span>{item.Status}</span>
+                    <span className={`${isCompleted ? 'bg-green-300': 'bg-red-200'} rounded-badge px-3`}>{item.Status}</span>
                 </div>
             ))}
         </div>

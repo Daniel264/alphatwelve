@@ -10,7 +10,9 @@ const Menu = () => {
                         <a>{item.text}</a>
                     </li>
                 ))}
+                
             </ul>
+
         </div>
     );
 };

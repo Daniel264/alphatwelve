@@ -10,7 +10,7 @@ function App() {
             <div>
                 <Menu />
             </div>
-            <div className="w-full h-[100vh] p-4 md:p-8 flex-col justify-center items-center flex">
+            <div className="w-full h-[100vh] p-4 md:p-8 flex-col items-center flex">
                 <Summary />
                 <Hero />
                 <Events />
