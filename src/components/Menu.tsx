@@ -9,12 +9,14 @@ const Menu = ({ name, image }: MenuProps) => {
     return (
         <div>
             <ul className="menu border-[#ADA9BB]/20 border-r-2 h-[100vh] rounded-none w-56">
-                <li>
-                    <a>
-                        {image}
-                        {name}
-                    </a>
-                </li>
+                {
+                    <li>
+                        <a>
+                            {image}
+                            {name}
+                        </a>
+                    </li>
+                }
                 {/* <li>
                     <a>
                         <svg
