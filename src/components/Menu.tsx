@@ -10,6 +10,14 @@ const Menu = () => {
                         <a>{item.text}</a>
                     </li>
                 ))}
+                <div className="w-full flex pl-5 gap-2 pt-3">
+                    <input
+                        type="checkbox"
+                        value="synthwave"
+                        className="toggle theme-controller"
+                    />
+                    <span>Dark Mode</span>
+                </div>
             </ul>
         </div>
     );
