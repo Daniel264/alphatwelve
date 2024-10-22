@@ -1,33 +1,29 @@
-import Information from "../assets/images/information.svg";
-import Incline from "../assets/images/arrow-up-right.svg";
-import Decline from "../assets/images/arrow-down-right.svg";
+import SummaryComponent from "./SummaryComponent";
 
-interface SummaryProps {
-    title: string;
-    price: number;
-    percentagePositive: boolean;
-}
-
-const Summary = ({ title, price, percentagePositive }: SummaryProps) => {
+const Summary = () => {
     return (
-        <div>
-            <article>
-                <div>
-                    <p>{title}</p>
-                    <img src={Information} alt="" />
-                </div>
-                <div>
-                    <p>{price}</p>
-                    <p>
-                        {percentagePositive ? (
-                            <img src={Incline} />
-                        ) : (
-                            <img src={Decline} />
-                        )}
-                    </p>
-                </div>
-            </article>
-        </div>
+        <section className="flex flex-row gap-10">
+            <SummaryComponent
+                title={"Total Events"}
+                price={100000}
+                percentagePositive={true}
+            />
+            <SummaryComponent
+                title={"Active Speakers"}
+                price={25}
+                percentagePositive={false}
+            />
+            <SummaryComponent
+                title={"Total Registrations"}
+                price={300}
+                percentagePositive={true}
+            />
+            <SummaryComponent
+                title={"Total Revenue"}
+                price={500000}
+                percentagePositive={true}
+            />
+        </section>
     );
 };
 
