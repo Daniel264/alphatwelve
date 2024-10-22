@@ -10,8 +10,8 @@ interface SummaryProps {
 
 const SummaryComponent = ({ title, price, percentagePositive }: SummaryProps) => {
     return (
-        <div>
-            <article className="border-2 border-[#ADA9BB]">
+        <div className="w-full">
+            <article className="border-2 border-[#ADA9BB]/15 px-4 w-full">
                 <div>
                     <p>{title}</p>
                     <img src={Information} alt="" />

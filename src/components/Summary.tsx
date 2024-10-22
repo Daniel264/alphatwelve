@@ -2,7 +2,7 @@ import SummaryComponent from "./SummaryComponent";
 
 const Summary = () => {
     return (
-        <section className="flex flex-row gap-10">
+        <section className="flex flex-row gap-10 w-full">
             <SummaryComponent
                 title={"Total Events"}
                 price={100000}
