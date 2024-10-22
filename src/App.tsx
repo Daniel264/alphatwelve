@@ -1,9 +1,12 @@
+import Carousel from "./components/Carousel";
 import "./globals.css";
 
 function App() {
-  return <div className="w-full h-[100vh] justify-center items-center flex">
-    <h1 className="font-bold text-5xl text-center">Hello world</h1>
-  </div>;
+    return (
+        <div className="w-full h-[100vh] justify-center items-center flex">
+            <Carousel />
+        </div>
+    );
 }
 
 export default App;
