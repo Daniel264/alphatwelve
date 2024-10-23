@@ -14,13 +14,13 @@ const Events = ({ isCompleted }: Status) => {
                         document.getElementById("my_modal_5").showModal()
                     }
                     key={index}
-                    className="flex flex-row w-full justify-between cursor-pointer text-[#334155] font-medium"
+                    className="grid grid-cols-4 cursor-pointer text-[#334155] font-medium"
                 >
                     <span>{item.name}</span>
                     <span>{item.date}</span>
                     <span>{item.speaker}</span>
                     <span
-                        className={`${isCompleted ? "bg-green-200" : "bg-red-200"} rounded-badge px-3`}
+                        className={`${isCompleted ? "bg-green-200" : "bg-red-200"} rounded-badge px-3 w-fit`}
                     >
                         {item.Status}
                     </span>
