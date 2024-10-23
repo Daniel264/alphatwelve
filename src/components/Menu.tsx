@@ -7,7 +7,7 @@ const Menu = () => {
                 {MenuArray.map((item, index) => (
                     <li key={index} className="flex flex-row">
                         <img className="w-14" src={item.image} alt="" />
-                        <a>{item.text}</a>
+                        <a className="font-medium text-lg">{item.text}</a>
                     </li>
                 ))}
                 <div className="w-full flex pl-5 gap-2 pt-3">
