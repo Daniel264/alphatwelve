@@ -1,11 +1,3 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -17,5 +9,8 @@ export default {
     extend: {},
   },
   // eslint-disable-next-line no-undef
-  plugins: [require('daisyui'),],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
 }

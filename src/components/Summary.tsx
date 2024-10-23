@@ -4,11 +4,11 @@ const Summary = () => {
     return (
         <section className="flex flex-col w-full text-left">
             <h1 className="font-medium text-2xl pb-5">Welcome! here’s your summary</h1>
-            <div className="flex flex-row gap-10 w-full">
+            <div className="flex flex-col md:flex-row gap-10 w-full">
                 <SummaryComponent
                     title={"Total Events"}
                     price={100000}
-                    percentagePositive={true}
+                    percentagePositive={true} 
                 />
                 <SummaryComponent
                     title={"Active Speakers"}

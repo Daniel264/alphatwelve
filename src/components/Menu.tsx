@@ -1,6 +1,17 @@
+import { useEffect, useState } from "react";
 import { MenuArray } from "../utils/Menu";
 
 const Menu = () => {
+    const [theme, setTheme] = useState("light");
+
+    const toggleTheme = () => {
+        setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+
+    };
+
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", theme);
+    }, [theme]);
     return (
         <div className="border-[#ADA9BB]/20 border-r-2 h-full">
             <ul className="menu h-[100vh] rounded-none w-56">
@@ -13,7 +24,10 @@ const Menu = () => {
                 <div className="w-full flex pl-5 gap-2 pt-3">
                     <input
                         type="checkbox"
-                        value="synthwave"
+                        // value="synthwave"
+                        value="dark"
+                        checked={theme === "dark"}
+                        onChange={toggleTheme}
                         className="toggle theme-controller"
                     />
                     <span>Dark Mode</span>
