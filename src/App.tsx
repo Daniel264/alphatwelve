@@ -7,8 +7,8 @@ import "./globals.css";
 
 function App() {
     return (
-        <div className="flex min-h-[100vh]">
-            <div className="min-h-[100vh]">
+        <div className="flex w-full min-h-[100vh]">
+            <div className="min-h-[100vh] w-56 bg-[#fff]">
                 <Menu />
             </div>
             <div className="w-full min-h-[100vh] p-4 md:p-8 flex-col items-center flex">

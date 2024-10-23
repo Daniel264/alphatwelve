@@ -4,6 +4,7 @@ interface Status {
     isCompleted: boolean;
 }
 
+
 const Events = ({ isCompleted }: Status) => {
     return (
         <div className="w-full space-y-10">
