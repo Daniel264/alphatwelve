@@ -15,7 +15,7 @@ function App() {
             <div className="w-full min-h-[100vh] p-4 md:p-8 flex-col items-center flex">
                 <Summary />
                 <Hero />
-                <EventHistory />
+                {/* <EventHistory /> */}
                 <Events />
                 <Pagination />
             </div>
