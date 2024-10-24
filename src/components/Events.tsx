@@ -39,7 +39,7 @@ const Events = () => {
                 id="my_modal_5"
                 className="modal modal-bottom sm:modal-middle"
             >
-                <div className="modal-box bg-white">
+                <div className="modal-box bg-white h-[380px] space-y-5 rounded">
                     <h3 className="font-bold text-lg">Event Name</h3>
                     <h5>Event Date</h5>
                     <p>Event Description</p>
