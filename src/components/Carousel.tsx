@@ -4,7 +4,7 @@ import slideTwo from "../assets/images/Slide2.svg";
 import slideThree from "../assets/images/Slide3.svg";
 
 const text =
-    " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quam vel ratione aspernatur impedit molestias maiores ducimus itaque architecto ipsum tempora ab officiis at, est porro quibusdam reiciendis hic, consequuntur rerum, voluptas doloremque veritatis eos? Culpa, architecto aliquam? Enim, dolore!";
+    " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quam vel ratione aspernatur impedit molestias maiores ducimus itaque architecto ipsum tempora ab officiis at, est porro quibusdam reiciendis hic, !";
 
 const Carousel = () => {
     return (
@@ -16,7 +16,7 @@ const Carousel = () => {
                         className="w-full"
                         alt="image of the first carousel image"
                     />
-                    <p className="font-normal text-sm absolute bottom-0 w-[600px] text-center text-white">
+                    <p className="font-normal text-xs absolute  bottom-0 lg:bottom-20  -left-8 w-[450px] text-center text-white">
                         {text}
                     </p>
                     <div className="absolute left-20 right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -40,7 +40,7 @@ const Carousel = () => {
                         className="w-full"
                         alt="image of the second carousel image"
                     />
-                    <p className="font-normal text-sm absolute bottom-0 w-[600px] text-center text-white">
+                    <p className="font-normal text-xs absolute bottom-0 lg:bottom-20 -left-8 w-[450px] text-center text-white">
                         {text}
                     </p>
                     <div className="absolute left-20 right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -64,7 +64,7 @@ const Carousel = () => {
                         className="w-full"
                         alt="image of the third carousel image"
                     />
-                    <p className="font-normal text-sm absolute bottom-0 w-[600px] text-center text-white">
+                    <p className="font-normal text-xs absolute  bottom-0 lg:bottom-20  -left-8 w-[450px] text-center text-white">
                         {text}
                     </p>
                     <div className="absolute left-20 right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
