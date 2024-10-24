@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MenuArray } from "../utils/Menu";
+import avatar from "../assets/images/avatar.svg";
 
 const Menu = () => {
     const [theme, setTheme] = useState("light");
@@ -67,7 +68,7 @@ const Menu = () => {
                     </div>
                     <div className="w-full flex pl-5 gap-2 pt-3 cursor-pointer">
                         <img
-                            src="src/assets/images/avatar.svg"
+                            src={avatar}
                             alt="image of an avatar"
                         />
                         <div className="flex flex-col">
