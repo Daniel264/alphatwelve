@@ -8,12 +8,12 @@ const text =
 
 const Carousel = () => {
     return (
-        <div className="w-full md:w-[50%] pb-8 lg:pb-0">
-            <div className="carousel w-full lg:h-[400px]">
+        <div className="w-full md:w-[50%] pb-8 lg:pb-0 z-0">
+            <div className="carousel w-full lg:h-[400px] z-10">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
                         src={slideOne}
-                        className="w-full"
+                        className="w-full z-0"
                         alt="image of the first carousel image"
                     />
                     <p className="font-normal text-xs absolute   bottom-0 lg:bottom-20 xl:left-10  -left-8 w-[450px] text-center text-white">

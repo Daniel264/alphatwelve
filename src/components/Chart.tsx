@@ -41,7 +41,7 @@ const Chart = () => {
   };
 
   return (
-    <div style={{ width: '800px', height: '700px' }}>
+    <div style={{ width: '800px', height: '400px' }}>
       <Bar data={data} options={options} />
     </div>
   );

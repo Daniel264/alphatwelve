@@ -27,13 +27,7 @@ export const MenuArray: MenuItem[] = [
     },
     {
         id: 5,
-        text: `(
-            <div>
-                <div>
-                    2
-                </div>
-            </div>
-        )`, // Pass JSX directly
+        text: "Notifications",
         image: "src/assets/images/bell.svg",
     },
     {

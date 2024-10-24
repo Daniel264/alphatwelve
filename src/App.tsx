@@ -9,7 +9,7 @@ import "./globals.css";
 function App() {
     return (
         <div className="flex w-full min-h-[100vh]">
-            <div className="hidden lg:flex lg:flex-col  lg:min-h-[100vh] lg:w-56 lg:bg-[#fff]">
+            <div className="hidden lg:flex lg:flex-col  lg:min-h-[100vh] lg:w-fit lg:bg-[#fff]">
                 <Menu />
             </div>
             <div className="w-full min-h-[100vh] p-4 md:p-8 flex-col items-center flex">
