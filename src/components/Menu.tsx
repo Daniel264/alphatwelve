@@ -6,7 +6,6 @@ const Menu = () => {
 
     const toggleTheme = () => {
         setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-
     };
 
     useEffect(() => {
@@ -15,9 +14,16 @@ const Menu = () => {
     return (
         <div className="border-[#ADA9BB]/20 border-r-2 h-full">
             <ul className="menu h-[100vh] rounded-none w-56">
+                <div className="w-full text-center flex justify-center font-medium text-2xl bg-[#2563EB]/30">
+                    Logo
+                </div>
                 {MenuArray.map((item, index) => (
                     <li key={index} className="flex flex-row">
-                        <img className="w-14" src={item.image} alt="Item Logo Images" />
+                        <img
+                            className="w-14"
+                            src={item.image}
+                            alt="Item Logo Images"
+                        />
                         <a className="font-medium text-lg">{item.text}</a>
                     </li>
                 ))}
