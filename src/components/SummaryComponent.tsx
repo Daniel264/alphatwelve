@@ -18,7 +18,7 @@ const SummaryComponent = ({
             <article className="border-2 border-[#ADA9BB]/15 px-4 h-[88px] w-full space-y-3">
                 <div className="flex space-x-5">
                     <p className="text-[#64748B] font-semibold">{title}</p>
-                    <div className="tooltip" data-tip="information">
+                    <div className="tooltip cursor-pointer" data-tip="information">
                         <img src={Information} alt="info image" />
                     </div>
                 </div>

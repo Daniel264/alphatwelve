@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { EventDetails } from "../utils/EventDetails";
+import modal_image_one from "../assets/images/modal-one.png";
+import modal_image_two from "../assets/images/modal-two.png";
+import modal_image_three from "../assets/images/modal-three.png";
 
 const Events = () => {
     const [completed, setCompleted] = useState(EventDetails);
@@ -20,7 +23,9 @@ const Events = () => {
             {EventDetails.map((item, index) => (
                 <div
                     onClick={() => {
-                        const modal = document.getElementById("my_modal_5") as HTMLDialogElement;
+                        const modal = document.getElementById(
+                            "my_modal_5",
+                        ) as HTMLDialogElement;
                         if (modal) {
                             modal.showModal();
                         }
@@ -49,23 +54,50 @@ const Events = () => {
                     <h3 className="font-bold text-lg">Event Name</h3>
                     <h5>Event Date</h5>
                     <p>Event Description</p>
+                    <div className="flex flex-row relative">
+                        <img
+                            src={modal_image_three}
+                            className="absolute z-50 h-12 -top-5 w-12"
+                            alt="image of the first modal avatar"
+                        />
+                        <img
+                            src={modal_image_two}
+                            className="absolute left-7 z-30 -top-5 h-12 w-12"
+                            alt="image of the second modal avatar"
+                        />
+                        <img
+                            src={modal_image_one}
+                            className="h-12 w-12 left-14 -top-5 absolute"
+                            alt="image of the third modal avatar"
+                        />
+                    </div>
                     <p className="py-4">
                         3 Guest Speakers: Speaker name A, Speaker name B,
                         Speaker name C.
                     </p>
                     <p>400 Attendees</p>
                     <div className="modal-action">
-                        <form method="dialog" className="space-x-2">
+                        <form
+                            method="dialog"
+                            className="flex flex-row w-full justify-between"
+                        >
                             {/* if there is a button in form, it will close the modal */}
-                            <button className="btn bg-[#F43F5E] outline-none border-none text-white">
-                                Close
-                            </button>
-                            <button
-                                onClick={markAsCompleted}
-                                className="btn bg-[#8576FF] outline-none border-none text-white"
-                            >
-                                Mark as completed
-                            </button>
+                            <div>
+                                <button className="btn bg-inherit border-[1px] border-black rounded outline-none  text-black">
+                                    Edit
+                                </button>
+                            </div>
+                            <div className="space-x-3">
+                                <button className="btn bg-[#F43F5E] outline-none rounded border-none text-white">
+                                    Close
+                                </button>
+                                <button
+                                    onClick={markAsCompleted}
+                                    className="btn bg-[#8576FF] outline-none rounded border-none text-white"
+                                >
+                                    Mark as completed
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
