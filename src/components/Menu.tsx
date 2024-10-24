@@ -65,6 +65,16 @@ const Menu = () => {
                         />
                         <span className="text-lg">Dark Mode</span>
                     </div>
+                    <div className="w-full flex pl-5 gap-2 pt-3 cursor-pointer">
+                        <img
+                            src="src/assets/images/avatar.svg"
+                            alt="image of an avatar"
+                        />
+                        <div className="flex flex-col">
+                            <span className="text-lg">Rudra Devi</span>
+                            <span className="text-sm">rudra.devi@gmail.com</span>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
