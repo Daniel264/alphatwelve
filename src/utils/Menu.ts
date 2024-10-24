@@ -1,6 +1,12 @@
 import { ReactNode } from "react";
 import Home from "../assets/images/home.svg";
 import solar_calendar from "../assets/images/solar_calendar-linear.svg";
+import solar_user_speak_rounded_linear from "../assets/images/solar_user-speak-rounded-linear.svg";
+import solar_document_linear from "../assets/images/solar_document-linear.svg";
+import bell from "../assets/images/bell.svg";
+import double_chat_bubble from "../assets/images/double-chat-bubble (1).svg";
+import settings_2 from "../assets/images/settings-2.svg";
+import double_chevron_left from "../assets/images/double-chevron-left (1).svg";
 
 interface MenuItem {
     id: number;
@@ -19,27 +25,27 @@ export const MenuArray: MenuItem[] = [
     {
         id: 3,
         text: "Speakers",
-        image: "src/assets/images/solar_user-speak-rounded-linear.svg",
+        image: solar_user_speak_rounded_linear,
     },
     {
         id: 4,
         text: "Reports",
-        image: "src/assets/images/solar_document-linear.svg",
+        image: solar_document_linear,
     },
     {
         id: 5,
         text: "Notifications",
-        image: "src/assets/images/bell.svg",
+        image: bell,
     },
     {
         id: 6,
         text: "Messages",
-        image: "src/assets/images/double-chat-bubble (1).svg",
+        image: double_chat_bubble,
     },
-    { id: 7, text: "Settings", image: "src/assets/images/settings-2.svg" },
+    { id: 7, text: "Settings", image: settings_2 },
     {
         id: 8,
         text: "Collapse",
-        image: "src/assets/images/double-chevron-left (1).svg",
+        image: double_chevron_left,
     },
 ];
