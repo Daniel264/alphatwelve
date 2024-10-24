@@ -19,9 +19,12 @@ const Events = () => {
         <div className="w-full space-y-10">
             {EventDetails.map((item, index) => (
                 <div
-                    onClick={() =>
-                        document.getElementById("my_modal_5").showModal()
-                    }
+                    onClick={() => {
+                        const modal = document.getElementById("my_modal_5") as HTMLDialogElement;
+                        if (modal) {
+                            modal.showModal();
+                        }
+                    }}
                     key={index}
                     className="grid grid-cols-4 cursor-pointer text-[#334155] font-medium"
                 >

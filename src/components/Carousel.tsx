@@ -1,4 +1,4 @@
-import React from "react";
+
 import slideOne from "../assets/images/Slide1.svg";
 import slideTwo from "../assets/images/Slide2.svg";
 import slideThree from "../assets/images/Slide3.svg";

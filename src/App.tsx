@@ -1,4 +1,4 @@
-import EventHistory from "./components/EventHistory";
+
 import Events from "./components/Events";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
