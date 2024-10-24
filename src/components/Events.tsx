@@ -1,14 +1,19 @@
+import { useState } from "react";
 import { EventDetails } from "../utils/EventDetails";
 
 interface Status {
     isCompleted: boolean;
 }
 
-
 const Events = ({ isCompleted }: Status) => {
+    const [completed, setCompleted] = useState([EventDetails]);
+
+    const markAsCompleted = () => {
+        setCompleted(completed.map(complete => complete.id === 1 ? {...}))
+    };
+
     return (
         <div className="w-full space-y-10">
-
             {EventDetails.map((item, index) => (
                 <div
                     onClick={() =>
@@ -21,7 +26,7 @@ const Events = ({ isCompleted }: Status) => {
                     <span>{item.date}</span>
                     <span>{item.speaker}</span>
                     <span
-                        className={`${item.Status === 'completed' ? "bg-green-200" : "bg-red-200"} rounded-badge px-3 w-fit`}
+                        className={`${completed ? "bg-green-200" : "bg-red-200"} rounded-badge px-3 w-fit`}
                     >
                         {item.Status}
                     </span>
@@ -43,9 +48,15 @@ const Events = ({ isCompleted }: Status) => {
                     <div className="modal-action">
                         <form method="dialog" className="space-x-2">
                             {/* if there is a button in form, it will close the modal */}
-                            <button className="btn bg-[#F43F5E] outline-none border-none text-white">Close</button>
-                            <button className="btn bg-[#8576FF] outline-none border-none text-white">Mark as completed</button>
-
+                            <button className="btn bg-[#F43F5E] outline-none border-none text-white">
+                                Close
+                            </button>
+                            <button
+                                onClick={markAsCompleted}
+                                className="btn bg-[#8576FF] outline-none border-none text-white"
+                            >
+                                Mark as completed
+                            </button>
                         </form>
                     </div>
                 </div>
