@@ -11,13 +11,12 @@ const Events = ({ isCompleted }: Status) => {
     const markAsCompleted = () => {
         setCompleted(
             completed.map((complete) =>
-                complete.id === 1
+                complete.id === complete.id
                     ? { ...complete, Status: "completed" }
                     : complete,
             ),
         );
         console.log(completed);
-        
     };
 
     return (

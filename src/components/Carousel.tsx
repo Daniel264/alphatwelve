@@ -8,8 +8,8 @@ import slideThree from "../assets/images/Slide3.svg";
 
 const Carousel = () => {
     return (
-        <div className="w-full md:w-[50%] ">
-            <div className="carousel w-full h-[400px]">
+        <div className="w-full md:w-[50%] pb-8 lg:pb-0">
+            <div className="carousel w-full lg:h-[400px]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src={slideOne} className="w-full" />
                     <p className="font-normal text-xs absolute bottom-0 w-[600px] text-center text-white">{text}</p>

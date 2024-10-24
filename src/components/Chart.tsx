@@ -4,7 +4,7 @@ const Chart = () => {
     return (
         <div>
             {/* <h2 className="mb-7">Event Registration per month</h2> */}
-            <img src={ChartImage} className="h-[400px]" alt="image of a chart" />
+            <img src={ChartImage} className="md:h-[400px]" alt="image of a chart" />
         </div>
     );
 };
