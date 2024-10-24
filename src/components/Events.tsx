@@ -8,6 +8,7 @@ interface Status {
 const Events = ({ isCompleted }: Status) => {
     return (
         <div className="w-full space-y-10">
+
             {EventDetails.map((item, index) => (
                 <div
                     onClick={() =>
@@ -20,7 +21,7 @@ const Events = ({ isCompleted }: Status) => {
                     <span>{item.date}</span>
                     <span>{item.speaker}</span>
                     <span
-                        className={`${isCompleted ? "bg-green-200" : "bg-red-200"} rounded-badge px-3 w-fit`}
+                        className={`${item.Status === 'completed' ? "bg-green-200" : "bg-red-200"} rounded-badge px-3 w-fit`}
                     >
                         {item.Status}
                     </span>
