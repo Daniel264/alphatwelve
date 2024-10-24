@@ -10,7 +10,7 @@ const Hero = () => {
                     Event registrations per month
                 </h2>
             </div>
-            <div className="h-fit flex flex-col lg:flex-row w-full justify-center">
+            <div className="h-fit flex flex-col space-x-4 lg:flex-row w-full justify-center">
                 <Chart />
                 <Carousel />
             </div>

@@ -17,7 +17,7 @@ const Menu = () => {
             <ul className="menu h-[100vh] rounded-none w-56">
                 {MenuArray.map((item, index) => (
                     <li key={index} className="flex flex-row">
-                        <img className="w-14" src={item.image} alt="" />
+                        <img className="w-14" src={item.image} alt="Item Logo Images" />
                         <a className="font-medium text-lg">{item.text}</a>
                     </li>
                 ))}
@@ -25,12 +25,11 @@ const Menu = () => {
                     <input
                         type="checkbox"
                         // value="synthwave"
-                        value="dark"
                         checked={theme === "dark"}
                         onChange={toggleTheme}
                         className="toggle theme-controller"
                     />
-                    <span>Dark Mode</span>
+                    <span className="text-lg">Dark Mode</span>
                 </div>
             </ul>
         </div>

@@ -14,7 +14,7 @@ function App() {
             <div className="w-full min-h-[100vh] p-4 md:p-8 flex-col items-center flex">
                 <Summary />
                 <Hero />
-                <Events isCompleted={true} />
+                <Events />
                 <Pagination />
             </div>
         </div>

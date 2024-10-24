@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { EventDetails } from "../utils/EventDetails";
 
-interface Status {
-    isCompleted: boolean;
-}
-
-const Events = ({ isCompleted }: Status) => {
+const Events = () => {
     const [completed, setCompleted] = useState(EventDetails);
 
     const markAsCompleted = () => {
