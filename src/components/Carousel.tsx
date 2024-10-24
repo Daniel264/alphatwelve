@@ -16,10 +16,10 @@ const Carousel = () => {
                         className="w-full"
                         alt="image of the first carousel image"
                     />
-                    <p className="font-normal text-xs absolute  bottom-0 lg:bottom-20  -left-8 w-[450px] text-center text-white">
+                    <p className="font-normal text-xs absolute   bottom-0 lg:bottom-20 xl:left-10  -left-8 w-[450px] text-center text-white">
                         {text}
                     </p>
-                    <div className="absolute left-20 right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <div className="absolute right-5 left-5 lg:left-20 lg:right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a
                             href="#slide1"
                             className="btn btn-circle bg-white border-none"
@@ -40,10 +40,10 @@ const Carousel = () => {
                         className="w-full"
                         alt="image of the second carousel image"
                     />
-                    <p className="font-normal text-xs absolute bottom-0 lg:bottom-20 -left-8 w-[450px] text-center text-white">
+                    <p className="font-normal text-xs absolute bottom-0 lg:bottom-20 xl:left-10 -left-8 w-[450px] text-center text-white">
                         {text}
                     </p>
-                    <div className="absolute left-20 right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <div className="absolute right-5 left-5 lg:left-20 lg:right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a
                             href="#slide2"
                             className="btn btn-circle bg-white border-none"
@@ -64,10 +64,10 @@ const Carousel = () => {
                         className="w-full"
                         alt="image of the third carousel image"
                     />
-                    <p className="font-normal text-xs absolute  bottom-0 lg:bottom-20  -left-8 w-[450px] text-center text-white">
+                    <p className="font-normal text-xs absolute  bottom-0 lg:bottom-20 xl:left-10 -left-8 w-[450px] text-center text-white">
                         {text}
                     </p>
-                    <div className="absolute left-20 right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <div className="absolute right-5 left-5 lg:left-20 lg:right-20 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a
                             href="#slide3"
                             className="btn btn-circle bg-white border-none"
