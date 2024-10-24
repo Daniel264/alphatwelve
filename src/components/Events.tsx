@@ -6,10 +6,18 @@ interface Status {
 }
 
 const Events = ({ isCompleted }: Status) => {
-    const [completed, setCompleted] = useState([EventDetails]);
+    const [completed, setCompleted] = useState(EventDetails);
 
     const markAsCompleted = () => {
-        setCompleted(completed.map(complete => complete.id === 1 ? {...}))
+        setCompleted(
+            completed.map((complete) =>
+                complete.id === 1
+                    ? { ...complete, Status: "completed" }
+                    : complete,
+            ),
+        );
+        console.log(completed);
+        
     };
 
     return (
@@ -26,7 +34,7 @@ const Events = ({ isCompleted }: Status) => {
                     <span>{item.date}</span>
                     <span>{item.speaker}</span>
                     <span
-                        className={`${completed ? "bg-green-200" : "bg-red-200"} rounded-badge px-3 w-fit`}
+                        className={`${item.Status === "completed" ? "bg-green-200" : "bg-red-200"} rounded-badge px-3 w-fit`}
                     >
                         {item.Status}
                     </span>

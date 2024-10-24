@@ -4,7 +4,7 @@ export const EventDetails = [
         name: "Cloud Innovation Summit",
         date: "2024-10-15",
         speaker: "Jane Doe",
-        Status: "completed",
+        Status: "in-progress",
     },
     {
         id: 2,
