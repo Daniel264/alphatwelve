@@ -1,6 +1,13 @@
+import { ReactNode } from "react";
 import Home from "../assets/images/home.svg";
 
-export const MenuArray = [
+interface MenuItem {
+    id: number;
+    text: ReactNode;
+    image: string;
+}
+
+export const MenuArray: MenuItem[] = [
     { id: 1, text: "Home", image: Home },
     {
         id: 2,
@@ -19,18 +26,24 @@ export const MenuArray = [
         image: "src/assets/images/solar_document-linear.svg",
     },
     {
-        id: 4,
-        text: "Notifications",
+        id: 5,
+        text: `(
+            <div>
+                <div>
+                    2
+                </div>
+            </div>
+        )`, // Pass JSX directly
         image: "src/assets/images/bell.svg",
     },
     {
-        id: 5,
+        id: 6,
         text: "Messages",
         image: "src/assets/images/double-chat-bubble (1).svg",
     },
-    { id: 6, text: "Settings", image: "src/assets/images/settings-2.svg" },
+    { id: 7, text: "Settings", image: "src/assets/images/settings-2.svg" },
     {
-        id: 7,
+        id: 8,
         text: "Collapse",
         image: "src/assets/images/double-chevron-left (1).svg",
     },
