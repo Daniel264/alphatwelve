@@ -7,22 +7,22 @@ const Summary = () => {
             <div className="flex flex-col md:flex-row gap-10 w-full">
                 <SummaryComponent
                     title={"Total Events"}
-                    price={100000}
+                    price="100,000"
                     percentagePositive={true} 
                 />
                 <SummaryComponent
                     title={"Active Speakers"}
-                    price={25}
+                    price="25"
                     percentagePositive={false}
                 />
                 <SummaryComponent
                     title={"Total Registrations"}
-                    price={300}
+                    price="300"
                     percentagePositive={true}
                 />
                 <SummaryComponent
                     title={"Total Revenue"}
-                    price={500000}
+                    price="500,000"
                     percentagePositive={true}
                 />
             </div>

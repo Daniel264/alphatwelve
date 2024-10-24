@@ -4,7 +4,7 @@ import Decline from "../assets/images/arrow-down-right.svg";
 
 interface SummaryProps {
     title: string;
-    price: number;
+    price: string;
     percentagePositive: boolean;
 }
 
@@ -21,7 +21,7 @@ const SummaryComponent = ({
                     <img src={Information} alt="" />
                 </div>
                 <div className="flex flex-row space-x-5">
-                    <p className="font-medium text-xl">{price}</p>
+                    <p className="font-semibold text-xl">{price}</p>
                     <span className="flex">
                         {percentagePositive ? (
                             <img className="w-5 h-5" src={Incline} alt="image of an inclined image" />
