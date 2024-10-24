@@ -28,11 +28,14 @@ const Events = () => {
                     <span>{item.name}</span>
                     <span>{item.date}</span>
                     <span>{item.speaker}</span>
-                    <span
-                        className={`${item.Status === "completed" ? "bg-green-200" : "bg-red-200"} rounded-badge px-3 w-fit`}
+                    <div
+                        className={`${item.Status === "completed" ? "bg-[#D1FAE5] text-[#10B981]" : "bg-[#DBEAFE] text-[#3B82F6]"} gap-2 items-center justify-center flex-row h-fit flex rounded-badge px-3 w-fit`}
                     >
+                        <div
+                            className={`w-2 h-2 rounded-full ${item.Status === "completed" ? "bg-[#10B981]" : "bg-[#3B82F6]"}`}
+                        ></div>
                         {item.Status}
-                    </span>
+                    </div>
                 </div>
             ))}
             <dialog

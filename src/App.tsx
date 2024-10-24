@@ -1,3 +1,4 @@
+import EventHistory from "./components/EventHistory";
 import Events from "./components/Events";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
@@ -14,6 +15,7 @@ function App() {
             <div className="w-full min-h-[100vh] p-4 md:p-8 flex-col items-center flex">
                 <Summary />
                 <Hero />
+                <EventHistory />
                 <Events />
                 <Pagination />
             </div>
