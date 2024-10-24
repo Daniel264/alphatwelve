@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Home from "../assets/images/home.svg";
+import solar_calendar from "../assets/images/solar_calendar-linear.svg";
 
 interface MenuItem {
     id: number;
@@ -12,7 +13,7 @@ export const MenuArray: MenuItem[] = [
     {
         id: 2,
         text: "Events",
-        image: "src/assets/images/solar_calendar-linear.svg",
+        image: solar_calendar,
     },
 
     {
