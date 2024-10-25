@@ -1,5 +1,12 @@
 export const EventDetails = [
     {
+        id: 0,
+        name: "Event Name",
+        date: "Date",
+        speaker: "Speaker",
+        Status: "Status",
+    },
+    {
         id: 1,
         name: "Cloud Innovation Summit",
         date: "2024-10-15",
